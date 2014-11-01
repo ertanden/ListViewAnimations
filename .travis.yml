@@ -41,7 +41,7 @@ install:
  - true
 
 script:
-  - ./gradlew connectedCheck --info
+  - ./gradlew :lib-core:connectedCheck :lib-manipulation:connectedCheck --info
   - if [[ $LINT == 'true' ]]; then ./gradlew lint ; fi
 
 after_success:
