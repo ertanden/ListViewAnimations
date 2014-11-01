@@ -26,6 +26,7 @@ env:
 
 before_install:
   - sudo chmod +x wait_for_emulator
+  - sudo chmod +x gradlew
 
   # Start the emulator
   - echo no | android create avd --force -n test -t android-$ANDROID_TARGET --abi armeabi-v7a
